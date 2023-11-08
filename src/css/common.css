@@ -7,16 +7,27 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
+  background-color: #0c0a32;
+  color: #ededed;
   line-height: 1.5;
+  background-image: url(/src/images/8186_universe-starry-sky-nebula_1920x1080.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style-type: none;
 }
 
 img {
   display: block;
   max-width: 100%;
 }
-
-.link {
-  color: black;
+button {
 }
