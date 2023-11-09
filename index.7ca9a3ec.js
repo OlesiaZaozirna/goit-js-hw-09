@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("preloader"),o=document.querySelectorAll("a.link"),t=document.body;let n=document.body.style.backgroundImage;o.forEach((e=>{e.style.display="none"})),t.style.backgroundImage="none",t.style.backgroundColor="black",setTimeout((()=>{e.style.display="none",o.forEach((e=>{e.style.display="block"})),document.body.style.backgroundImage=n}),5e3)}));
+//# sourceMappingURL=index.7ca9a3ec.js.map
