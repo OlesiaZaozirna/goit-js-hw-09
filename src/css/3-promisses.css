@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cinzel', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(/src/images/1622467092_18-phonoteka_org-p-vselennaya-kosmos-art-krasivo-20-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  position: relative;
+  width: 350px;
+  height: 340px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #5fc1e4 0%,
+    #5fc1e4 10%,
+    transparent 10%,
+    transparent 80%,
+    #5fc1e4 100%
+  );
+  border-radius: 20px;
+  animation: animate 2.5s linear infinite;
+}
+.container span {
+  position: absolute;
+  inset: 5px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.container span::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: url(/src/images/1622467092_18-phonoteka_org-p-vselennaya-kosmos-art-krasivo-20-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+
+.container span::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: url(/src/images/1622467092_18-phonoteka_org-p-vselennaya-kosmos-art-krasivo-20-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+
+.container span {
+  position: absolute;
+  inset: 5px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.container span ::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: url(/src/images/1622467092_18-phonoteka_org-p-vselennaya-kosmos-art-krasivo-20-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+
+.container span ::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: url(/src/images/1622467092_18-phonoteka_org-p-vselennaya-kosmos-art-krasivo-20-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(15px);
+}
+form {
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  transition: 0.5s;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px;
+  font-family: 'Cinzel';
+}
+.back-btn {
+  position: fixed;
+  top: 10px;
+  left: 5px;
+  padding: 10px;
+}
+.inputBox {
+  color: white;
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+input[type='number'] {
+  border-radius: 5px;
+  border: white;
+  background: transparent;
+  text-align: center;
+}

@@ -20,5 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.body.style.backgroundImage = backgroundPicture;
-  }, 5000);
+  }, 2000);
 });

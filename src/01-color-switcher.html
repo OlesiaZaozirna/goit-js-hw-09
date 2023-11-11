@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color switcher</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <div class="btn-container">
+      <p><a class="link" href="index.html">Go back</a></p>
 
-    <button type="button" data-start>Start</button>
-    <button type="button" data-stop>Stop</button>
-
+      <button class="first-btn btn" type="button" data-start>Start</button>
+      <button class="first-btn btn" type="button" data-stop>Stop</button>
+    </div>
     <script src="js/01-color-switcher.js" type="module"></script>
   </body>
 </html>
