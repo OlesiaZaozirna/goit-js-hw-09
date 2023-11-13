@@ -41,7 +41,7 @@ function onBtnStartClick() {
     const timeToFinish = chosenDate - new Date();
     const { days, hours, minutes, seconds } = convertMs(timeToFinish);
 
-    // Оновлюємо значення для елементів з окремими змінними
+    
     daysElement.textContent = addLeadingZero(days);
     hoursElement.textContent = addLeadingZero(hours);
     minutesElement.textContent = addLeadingZero(minutes);
